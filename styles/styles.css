@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Pattaya&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: sans-serif; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(243, 192, 213);
+  color: #333;
+  line-height: 1.6;
+}
+
+.title {
+  font-family: "Pattaya";
+  background-color: rgb(218, 59, 112);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  font-size: 1.7em;
+}
+
+.title-text {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.content-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-bottom: 20px;
+  /* background-color: #f4f4f4; */
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+  padding: 10px;
+}
+
+.content img {
+  width: 100%;
+  max-width: 200px; /* Sesuaikan ukuran maksimal gambar */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.content-text {
+  text-align: justify;
+  font-family: "Atkinson Hyperlegible Next";
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.border {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  filter: invert(1);
+}
+
+.content-wrap.sign {
+  display: flex;
+  flex-direction: column; /* Mengatur item menjadi kolom */
+  align-items: center; /* Agar gambar dan teks rata tengah horizontal */
+  text-align: center; /* Agar teks di dalam <p> rata tengah */
+}
+
+.kebo {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .content-wrap {
+    flex-direction: column;
+  }
+}
